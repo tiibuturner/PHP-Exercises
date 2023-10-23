@@ -1,0 +1,24 @@
+<!-- EI ENCTYPEA! -->
+<form name='lomake' action="./tehtava7luku.php" method="post">
+    <h3 style="font-family:verdana;">Lomake</h3>
+    <!--Käytän metodina POST:ia. Tulostus toiseen ikkunaan.-->
+    <!--Kysytään vaadittavat speksit.-->
+    Nimi:<br> <input type="text" name="nimi" value=""size="40" maxlength="80"/><br>
+    
+    Sähköposti:<br> <input type="text" name="sahkoposti" value=""size="40" maxlength="80"/><br>
+    
+    <br>Valitse laji:<br> 
+    <input type="checkbox" name="urheilulaji[]" value="1"/>Yläköysikiipeily<br>
+    <input type="checkbox" name="urheilulaji[]" value="2"/>Ilmajooga<br>
+    <input type="checkbox" name="urheilulaji[]" value="3"/>Pilates<br>
+    
+    <br>Urheiluun käytettävä aika (viikossa):<br>
+    <input type="radio" name="aikavali" value="1"/>Yli 6 tuntia<br>
+    <input type="radio" name="aikavali" value="2"/>Noin 4 tuntia<br>
+    <input type="radio" name="aikavali" value="3"/>Alle 2 tuntia<br>
+    <input type="radio" name="aikavali" value="4"/>En venyttele koskaan<br>
+    
+    <br>
+    <input type="submit" name="ok" value="Lähetä"/>
+    <input type="reset" name="eiok" value="Tyhjennä"/>
+</form>
